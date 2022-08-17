@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# You can use the following two commands to install Oh My Zsh according to your location.
+# sh -c "$(curl -fsSL https://gitee.com/jinzcdev/linux-shell/raw/main/install_ohmyzsh.sh)"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/jinzcdev/linux-shell/main/install_ohmyzsh.sh)"
+
 REPO="https://gitee.com/mirrors/oh-my-zsh.git"
 ZSH_AUTO_SUGGESTIONS="https://gitee.com/zsh-users/zsh-autosuggestions.git"
 ZSH_SYNTAX_HIGHLIGHTING="https://gitee.com/zsh-users/zsh-syntax-highlighting.git"
