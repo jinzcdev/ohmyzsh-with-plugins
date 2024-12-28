@@ -6,26 +6,32 @@ Oh My Zsh is a community-driven framework for managing zsh configuration. It all
 
 ## Usage
 
+### Online Installation
+
+Depending on your network environment and preferred `HTTP` command-line tool, choose one of the following methods for installation:
+
+1. Install from Gitee mirror repository (recommended for China):
+
+| Method    | Command                                                                                             |
+| :-------- | :-------------------------------------------------------------------------------------------------- |
+| **curl**  | `sh -c "$(curl -fsSL https://gitee.com/jinzcdev/ohmyzsh-with-plugins/raw/main/install_ohmyzsh.sh)"` |
+| **wget**  | `sh -c "$(wget -O- https://gitee.com/jinzcdev/ohmyzsh-with-plugins/raw/main/install_ohmyzsh.sh)"`   |
+| **fetch** | `sh -c "$(fetch -o - https://gitee.com/jinzcdev/ohmyzsh-with-plugins/raw/main/install_ohmyzsh.sh)"` |
+
+2. Install from GitHub:
+
+| Method    | Command                                                                                                         |
+| :-------- | :-------------------------------------------------------------------------------------------------------------- |
+| **curl**  | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/jinzcdev/ohmyzsh-with-plugins/main/install_ohmyzsh.sh)"` |
+| **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/jinzcdev/ohmyzsh-with-plugins/main/install_ohmyzsh.sh)"`   |
+| **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/jinzcdev/ohmyzsh-with-plugins/main/install_ohmyzsh.sh)"` |
+
 ### Local Installation
 
 Clone the project or create the script file locally, then run the following command:
 
 ```sh
-sh install_ohmyzsh_custom.sh
-```
-
-### Online Installation
-
-1. Install from Gitee mirror repository (recommended):
-
-```sh
-curl -sSL https://gitee.com/jinzcdev/ohmyzsh-with-plugins/raw/main/install_ohmyzsh_custom.sh | sh
-```
-
-2. Install from GitHub:
-
-```sh
-curl -sSL https://raw.githubusercontent.com/jinzcdev/ohmyzsh-with-plugins/main/install_ohmyzsh_custom.sh | sh
+sh install_ohmyzsh.sh
 ```
 
 ## Dependencies
@@ -43,6 +49,16 @@ Depending on the operating system, you can use different package managers to ins
 | CentOS/RHEL      | yum             | `sudo yum install git zsh`                    |
 | macOS            | brew            | `brew install git zsh`                        |
 
+## Uninstall Oh My Zsh
+
+Run `uninstall_oh_my_zsh` in the command line, which will automatically remove and restore your previous bash or zsh configuration.
+
 ## License
 
 This project is licensed under the MIT License. For more details, please refer to the [LICENSE](./LICENSE) file.
+
+## Related Links
+
+1. [Oh My Zsh Official Repository](https://github.com/ohmyzsh/ohmyzsh)
+2. [zsh-syntax-highlighting Official Repository](https://github.com/zsh-users/zsh-syntax-highlighting)
+3. [zsh-autosuggestions Official Repository](https://github.com/zsh-users/zsh-autosuggestions)

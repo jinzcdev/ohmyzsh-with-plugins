@@ -1,31 +1,41 @@
 # Oh My Zsh 插件安装脚本
 
-这是一个快速安装 Oh My Zsh 的脚本，同时包含 zsh-auto-suggestions 和 zsh-syntax-highlighting 插件。
+<div align="center">
+    <img src="https://ohmyz.sh/img/OMZLogo_BnW.png" alt="Oh My Zsh Logo" width="200" />
+</div>
 
-Oh My Zsh 是一个社区驱动的框架，用于管理 zsh 配置。可以安装许多高效的插件、主题等。但是其中两个热门插件 `zsh-auto-suggestions` 和 `zsh-syntax-highlighting` 并没有直接包含在 Oh My Zsh 中，所以将其安装脚本进行了修改，使其可以一键安装。
+这是一个快速安装 Oh My Zsh 的脚本，附带了 zsh-auto-suggestions 和 zsh-syntax-highlighting 插件。
+
+Oh My Zsh 是一个社区驱动的框架，用于管理 zsh 配置，且可以安装许多高效的插件、主题等。但是其中两个热门插件 `zsh-auto-suggestions` 和 `zsh-syntax-highlighting` 并没有直接包含在 Oh My Zsh 中，所以将其安装脚本进行了修改，使其可以一键安装。
 
 ## 使用方法
+
+### 在线安装
+
+根据你的网络环境和常用的 `HTTP` 命令行工具，选择以下任意一种方式进行安装：
+
+1. 从 Gitee 镜像仓库安装（**国内推荐**）：
+
+| 方式      | 命令                                                                                                |
+| :-------- | :-------------------------------------------------------------------------------------------------- |
+| **curl**  | `sh -c "$(curl -fsSL https://gitee.com/jinzcdev/ohmyzsh-with-plugins/raw/main/install_ohmyzsh.sh)"` |
+| **wget**  | `sh -c "$(wget -O- https://gitee.com/jinzcdev/ohmyzsh-with-plugins/raw/main/install_ohmyzsh.sh)"`   |
+| **fetch** | `sh -c "$(fetch -o - https://gitee.com/jinzcdev/ohmyzsh-with-plugins/raw/main/install_ohmyzsh.sh)"` |
+
+2. 从 GitHub 安装：
+
+| 方式      | 命令                                                                                                            |
+| :-------- | :-------------------------------------------------------------------------------------------------------------- |
+| **curl**  | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/jinzcdev/ohmyzsh-with-plugins/main/install_ohmyzsh.sh)"` |
+| **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/jinzcdev/ohmyzsh-with-plugins/main/install_ohmyzsh.sh)"`   |
+| **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/jinzcdev/ohmyzsh-with-plugins/main/install_ohmyzsh.sh)"` |
 
 ### 本地安装
 
 克隆该项目或者在本地直接创建脚本文件后，执行以下命令：
 
 ```sh
-sh install_ohmyzsh_custom.sh
-```
-
-### 在线安装
-
-1. 从 Gitee 镜像仓库安装（**推荐**）：
-
-```sh
-curl -sSL https://gitee.com/jinzcdev/ohmyzsh-with-plugins/raw/main/install_ohmyzsh_custom.sh | sh
-```
-
-2. 从 GitHub 安装：
-
-```sh
-curl -sSL https://raw.githubusercontent.com/jinzcdev/ohmyzsh-with-plugins/main/install_ohmyzsh_custom.sh | sh
+sh install_ohmyzsh.sh
 ```
 
 ## 依赖项
@@ -43,6 +53,16 @@ curl -sSL https://raw.githubusercontent.com/jinzcdev/ohmyzsh-with-plugins/main/i
 | CentOS/RHEL   | yum      | `sudo yum install git zsh`                    |
 | macOS         | brew     | `brew install git zsh`                        |
 
+## 卸载 Oh My Zsh
+
+在命令行中运行 `uninstall_oh_my_zsh`，该命令将会自动移除并恢复你之前的 bash 或 zsh 配置。
+
 ## 许可证
 
 此项目使用 MIT 许可证。有关详细信息，请参阅 [LICENSE](./LICENSE) 文件。
+
+## 相关链接
+
+1. [Oh My Zsh 官方仓库](https://github.com/ohmyzsh/ohmyzsh)
+2. [zsh-syntax-highlighting 官方仓库](https://github.com/zsh-users/zsh-syntax-highlighting)
+3. [zsh-autosuggestions 官方仓库](https://github.com/zsh-users/zsh-autosuggestions)
